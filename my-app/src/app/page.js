@@ -1,10 +1,14 @@
+// app/page.js
+import Link from 'next/link';
 
-export default function page() {
-  return (
-    <div>
-
-      <h1> This is the page.js file</h1>
-      
-    </div>
-  )
+export default function HomePage() {
+    return (
+        <div>
+            <h1>Welcome to My Todo App</h1>
+            <br />
+            <p>
+                <Link href="/users">View Todos</Link>
+            </p>
+        </div>
+    );
 }
